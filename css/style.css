@@ -1,0 +1,291 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100%;
+  overflow-x: hidden;
+  display: block;
+  background-color: #000;
+  font-family: 'Noto Sans TC', sans-serif;
+  -webkit-animation-name: flashes;
+          animation-name: flashes;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+@-webkit-keyframes flashes {
+  30%, 32%, 34% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#4f0909), to(#3d0a44));
+    background: linear-gradient(to bottom, #4f0909 0%, #3d0a44 100%);
+  }
+  29%, 31%, 35%, 45%, 100% {
+    background: black;
+  }
+}
+
+@keyframes flashes {
+  30%, 32%, 34% {
+    background: -webkit-gradient(linear, left top, left bottom, from(#4f0909), to(#3d0a44));
+    background: linear-gradient(to bottom, #4f0909 0%, #3d0a44 100%);
+  }
+  29%, 31%, 35%, 45%, 100% {
+    background: black;
+  }
+}
+
+.title {
+  width: 40%;
+  min-width: 300px;
+  padding-top: 10vh;
+  margin: 0 auto;
+}
+
+.title img {
+  width: 100%;
+  -webkit-filter: drop-shadow(0px 0px 8px #E51010);
+          filter: drop-shadow(0px 0px 8px #E51010);
+  -webkit-animation: title-neon;
+          animation: title-neon;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+@-webkit-keyframes title-neon {
+  0%, 30%, 32%, 34%, 36% {
+    opacity: 0;
+    -webkit-filter: drop-shadow(0px 0px 8px #000000);
+            filter: drop-shadow(0px 0px 8px #000000);
+  }
+  29%, 31%, 33%, 35%, 45%, 100% {
+    opacity: 1;
+    -webkit-filter: drop-shadow(0px 0px 8px #E51010);
+            filter: drop-shadow(0px 0px 8px #E51010);
+  }
+}
+
+@keyframes title-neon {
+  0%, 30%, 32%, 34%, 36% {
+    opacity: 0;
+    -webkit-filter: drop-shadow(0px 0px 8px #000000);
+            filter: drop-shadow(0px 0px 8px #000000);
+  }
+  29%, 31%, 33%, 35%, 45%, 100% {
+    opacity: 1;
+    -webkit-filter: drop-shadow(0px 0px 8px #E51010);
+            filter: drop-shadow(0px 0px 8px #E51010);
+  }
+}
+
+.title-pic {
+  width: 100vw;
+  overflow-x: hidden;
+  margin: 0 auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.title-pic img {
+  width: 15vw;
+  display: block;
+  min-width: 200px;
+  z-index: 100;
+}
+
+.title-pic img:first-child {
+  -webkit-animation: title-pic-left;
+          animation: title-pic-left;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  margin-right: 10px;
+}
+
+@-webkit-keyframes title-pic-left {
+  from {
+    -webkit-transform: translateX(15vw);
+            transform: translateX(15vw);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes title-pic-left {
+  from {
+    -webkit-transform: translateX(15vw);
+            transform: translateX(15vw);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.title-pic img:last-child {
+  -webkit-animation: title-pic-right;
+          animation: title-pic-right;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  margin-left: 10px;
+}
+
+@-webkit-keyframes title-pic-right {
+  from {
+    -webkit-transform: translateX(-15vw);
+            transform: translateX(-15vw);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes title-pic-right {
+  from {
+    -webkit-transform: translateX(-15vw);
+            transform: translateX(-15vw);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .title-pic img {
+    width: 12vw;
+    top: 40vh;
+  }
+  .title-pic img:first-child {
+    -webkit-animation: title-pic-left;
+            animation: title-pic-left;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+  }
+  .title-pic img:last-child {
+    -webkit-animation: title-pic-right;
+            animation: title-pic-right;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+  }
+}
+
+.event-title {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  color: yellow;
+  display: inline-block;
+  margin: 10px 20px;
+  text-align: center;
+  letter-spacing: 10px;
+  padding-top: 10vh;
+  font-size: 1.8rem;
+  -webkit-animation: event-neon;
+          animation: event-neon;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+@-webkit-keyframes event-neon {
+  0%, 30%, 32%, 34%, 36% {
+    opacity: 0;
+  }
+  29%, 31%, 33%, 35%, 45%, 100% {
+    opacity: 1;
+  }
+}
+
+@keyframes event-neon {
+  0%, 30%, 32%, 34%, 36% {
+    opacity: 0;
+  }
+  29%, 31%, 33%, 35%, 45%, 100% {
+    opacity: 1;
+  }
+}
+
+.event-button-square {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.event-button-square .event-button {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  text-align: center;
+  float: left;
+  letter-spacing: 8px;
+  font-size: 1.5rem;
+  width: 25%;
+  margin: 0 auto;
+  padding: 20px 10px;
+  background-color: yellow;
+  color: black;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 769px) {
+  .event-button-square .event-button {
+    width: 50%;
+    font-size: 1.2rem;
+    letter-spacing: 5px;
+  }
+}
+
+.event {
+  width: 100vw;
+}
+
+.event-1 {
+  background-color: #000072;
+  overflow-y: hidden;
+}
+
+.event-1 h3 {
+  color: #e6cf1d;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  text-align: center;
+  text-shadow: 3px 3px black;
+  letter-spacing: 10px;
+  font-size: 5rem;
+}
+
+.event-1 .click-button {
+  width: 40%;
+  min-width: 300px;
+  background-color: #e6cf1d;
+  border: 3px solid white;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  -webkit-box-shadow: 3px 3px black;
+          box-shadow: 3px 3px black;
+  text-align: center;
+}
+
+.event-1 .click-button a {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 4rem;
+  letter-spacing: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.event-1 img {
+  position: relative;
+  width: 100%;
+  margin-top: -20px;
+}
+/*# sourceMappingURL=style.css.map */
