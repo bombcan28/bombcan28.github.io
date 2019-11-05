@@ -10,8 +10,7 @@ body {
 }
 
 .header {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   overflow-x: hidden;
   display: block;
   background-color: #000;
@@ -90,65 +89,79 @@ body {
 .title-pic {
   width: 100vw;
   overflow-x: hidden;
+  margin: 0 auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .title-pic img {
   width: 15vw;
+  display: block;
   min-width: 200px;
-  position: absolute;
-  top: 30vh;
   z-index: 100;
 }
 
 .title-pic img:first-child {
-  left: 10vw;
   -webkit-animation: title-pic-left;
           animation: title-pic-left;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+  margin-right: 10px;
 }
 
 @-webkit-keyframes title-pic-left {
   from {
-    left: 35vw;
+    -webkit-transform: translateX(15vw);
+            transform: translateX(15vw);
   }
   to {
-    left: 10vw;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
 @keyframes title-pic-left {
   from {
-    left: 35vw;
+    -webkit-transform: translateX(15vw);
+            transform: translateX(15vw);
   }
   to {
-    left: 10vw;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
 .title-pic img:last-child {
-  right: 10vw;
   -webkit-animation: title-pic-right;
           animation: title-pic-right;
   -webkit-animation-duration: 4s;
           animation-duration: 4s;
+  margin-left: 10px;
 }
 
 @-webkit-keyframes title-pic-right {
   from {
-    right: 35vw;
+    -webkit-transform: translateX(-15vw);
+            transform: translateX(-15vw);
   }
   to {
-    right: 10vw;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
 @keyframes title-pic-right {
   from {
-    right: 35vw;
+    -webkit-transform: translateX(-15vw);
+            transform: translateX(-15vw);
   }
   to {
-    right: 10vw;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 
@@ -158,56 +171,24 @@ body {
     top: 40vh;
   }
   .title-pic img:first-child {
-    left: -60vw;
     -webkit-animation: title-pic-left;
             animation: title-pic-left;
     -webkit-animation-duration: 4s;
             animation-duration: 4s;
   }
-  @-webkit-keyframes title-pic-left {
-    from {
-      left: 2vw;
-    }
-    to {
-      left: -60vw;
-    }
-  }
-  @keyframes title-pic-left {
-    from {
-      left: 2vw;
-    }
-    to {
-      left: -60vw;
-    }
-  }
   .title-pic img:last-child {
-    right: -60vw;
     -webkit-animation: title-pic-right;
             animation: title-pic-right;
     -webkit-animation-duration: 4s;
             animation-duration: 4s;
-  }
-  @-webkit-keyframes title-pic-right {
-    from {
-      right: 2vw;
-    }
-    to {
-      right: -60vw;
-    }
-  }
-  @keyframes title-pic-right {
-    from {
-      right: 2vw;
-    }
-    to {
-      right: -60vw;
-    }
   }
 }
 
 .event-title {
   font-family: 'ZCOOL QingKe HuangYou', cursive;
   color: yellow;
+  display: inline-block;
+  margin: 10px 20px;
   text-align: center;
   letter-spacing: 10px;
   padding-top: 10vh;
@@ -237,9 +218,8 @@ body {
 }
 
 .event-button-square {
-  width: 100vw;
-  position: absolute;
-  bottom: 0;
+  width: 100%;
+  margin-top: 30px;
 }
 
 .event-button-square .event-button {
