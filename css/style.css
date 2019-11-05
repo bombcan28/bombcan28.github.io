@@ -14,7 +14,6 @@ body {
   overflow-x: hidden;
   display: block;
   background-color: #000;
-  font-family: 'Noto Sans TC', sans-serif;
   -webkit-animation-name: flashes;
           animation-name: flashes;
   -webkit-animation-iteration-count: infinite;
@@ -309,11 +308,31 @@ body {
   padding: 10px;
   background-color: #fff;
   border-radius: 10px;
-  font-family: 'NOTO SANS TC',sans-serif;
+  text-align: center;
+  font-family: 'Noto Sans SC', sans-serif;
 }
 
 .cardsBar .card img {
   width: 100%;
   margin-top: 10px;
+}
+
+.cardsBar .card span {
+  color: red;
+}
+
+.cardsBar .card .buy {
+  background-color: #000072;
+  width: 80%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+.cardsBar .card .buy a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Noto Sans SC', sans-serif;
 }
 /*# sourceMappingURL=style.css.map */

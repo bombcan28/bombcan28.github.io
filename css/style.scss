@@ -11,7 +11,7 @@ body{
     overflow-x: hidden;
     display: block;
     background-color: #000;
-    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Noto Sans SC', sans-serif;
     animation-name: flashes;
     animation-iteration-count: infinite;
     animation-duration: 10s;
@@ -195,11 +195,27 @@ body{
         padding:10px;
         background-color: #fff;
         border-radius: 10px;
-        font-family: 'NOTO SANS TC',sans-serif;
+        text-align: center;
+        font-family: 'Noto Sans SC', sans-serif;
         img{
             width: 100%;
             margin-top: 10px;
         }
+        span{
+            color: red;
+        }
+        .buy{
+            background-color: #000072;
+            width: 80%;
+            margin: 0 auto;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: 'Noto Sans SC', sans-serif;
+            a{
+                color: white;
+                text-decoration: none;
+                font-family: 'Noto Sans SC', sans-serif;
+            }
+        }
     }
-
 }
