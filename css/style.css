@@ -260,6 +260,7 @@ body {
   text-shadow: 3px 3px black;
   letter-spacing: 10px;
   font-size: 5rem;
+  margin-bottom: 20px;
 }
 
 .event-1 .click-button {
@@ -287,5 +288,32 @@ body {
   position: relative;
   width: 100%;
   margin-top: -20px;
+}
+
+.cardsBar {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.cardsBar .card {
+  width: 45%;
+  margin: 10px 5px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  font-family: 'NOTO SANS TC',sans-serif;
+}
+
+.cardsBar .card img {
+  width: 100%;
+  margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */
