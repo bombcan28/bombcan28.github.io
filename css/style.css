@@ -284,9 +284,12 @@ body {
 
 .event-1 .click-button {
   width: 40%;
+  min-width: 300px;
   background-color: #e6cf1d;
   border: 3px solid white;
+  border-radius: 10px;
   margin: 0 auto;
+  padding: 10px;
   -webkit-box-shadow: 3px 3px black;
           box-shadow: 3px 3px black;
   text-align: center;
@@ -294,11 +297,15 @@ body {
 
 .event-1 .click-button a {
   font-family: 'ZCOOL QingKe HuangYou', cursive;
-  font-size: 5rem;
+  font-size: 4rem;
+  letter-spacing: 10px;
+  text-decoration: none;
+  color: white;
 }
 
 .event-1 img {
   position: relative;
   width: 100%;
+  margin-top: -20px;
 }
 /*# sourceMappingURL=style.css.map */
