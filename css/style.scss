@@ -190,6 +190,9 @@ body{
     justify-content: center;
     flex-wrap:wrap;
     .card{
+        @media screen and (max-width:769px) {
+            width: 22.5%;
+        }
         width: 45%;
         margin: 10px 5px;
         padding:10px;
