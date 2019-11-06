@@ -433,12 +433,15 @@ body{
             padding: 10px;
             border-radius: 5px;
             font-family: 'Noto Sans SC', sans-serif;
-            p{
-                color: white;
-                text-decoration: none;
-                font-family: 'Noto Sans SC', sans-serif;
-                margin: 0;
-            }
+            color: white;
+            text-decoration: none;
+            font-family: 'Noto Sans SC', sans-serif;
+            margin: 0;
+            border:0;
         }
     }
+}
+.hidden{
+    display: none;
+
 }
