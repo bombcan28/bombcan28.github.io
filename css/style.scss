@@ -261,7 +261,7 @@ body{
         img{
             width: 30%;
             @media screen and (max-width:769px){
-                width: 50%;
+                width: 30%;
             }
         }
     }
@@ -433,10 +433,11 @@ body{
             padding: 10px;
             border-radius: 5px;
             font-family: 'Noto Sans SC', sans-serif;
-            a{
+            p{
                 color: white;
                 text-decoration: none;
                 font-family: 'Noto Sans SC', sans-serif;
+                margin: 0;
             }
         }
     }
