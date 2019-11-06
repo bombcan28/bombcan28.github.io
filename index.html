@@ -7,9 +7,11 @@
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Monoton|Noto+Sans+TC|Noto+Sans+SC|ZCOOL+QingKe+HuangYou&display=swap"
     rel="stylesheet">    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     <title>Filter017 1111享乐生活节</title>
 </head>
 <body>
+    <div class="backToTop" id="backToTop"><i class="fas fa-sort-up fa-2x"></i></div>
     <section class="header">
         <div class="title">
             <img src="img/event-logo-02.svg">
@@ -64,7 +66,7 @@
         <div class="click-button">
             <a target="_blank" href="https://filter017.world.taobao.com/category-1491489494.htm?spm=a312a.7700824.w5003-16801910812.1.5cee21dfdExvdc&search=y&catName=111%D4%AA%CC%D8%BB%DD%C9%CC%C6%B7%D7%A8%C7%F8&scene=taobao_shop#bd">查看更多</a>
         </div>
-        <img src="img/7.png" alt="">
+        <img id="pic1" src="img/7.png" alt="">
     </section>
     <section id="event-2" class="event event-2">
         <h3>限时必杀新品 七折优惠</h3>
@@ -104,8 +106,8 @@
             </div>
         </div>
         <div class="picbox">
-            <img src="img/03.png" alt="">
-            <img src="img/04.png" alt="">
+            <img id="pic2" src="img/03.png" alt="">
+            <img id="pic3" src="img/04.png" alt="">
         </div>
     </section>
     <section id="event-3" class="event event-3">
@@ -190,5 +192,42 @@
             </div>
         </div>
     </section>
+    <script defer src="https://use.fontawesome.com/releases/v5.1.1/js/all.js" integrity="sha384-BtvRZcyfv4r0x/phJt9Y9HhnN5ur1Z+kZbKVgzVBAlQZX4jvAuImlIz+bG7TS00a" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $("#backToTop").click(function () {
+                $(window).scrollTop(0);
+            });
+            $(window).scroll(function () {
+                if(document.body.clientWidth > 769){
+                    let scrollVal = $(this).scrollTop();
+                    $("span.ScrollTop").text(scrollVal);
+                    if (scrollVal > 750 && scrollVal < 950) {
+                        let animation1 = 750 - scrollVal;
+                        $("#pic1").css('margin-top',animation1);
+                    };
+                    if( scrollVal > 2000 && scrollVal < 2300){
+                        let animation2 = scrollVal - 2000 ;
+                        $("#pic2").css('margin-left', animation2);
+                        $("#pic3").css('margin-right', animation2);
+                    };
+                }else{
+                    let scrollValMoblie = $(this).scrollTop();
+                    $("span.ScrollTop").text(scrollValMoblie);
+                    if (scrollValMoblie > 1500 && scrollValMoblie < 2000) {
+                        let animation1 = 1800 - scrollValMoblie;
+                        $("#pic1").css('margin-top', animation1);
+                    };
+                    if (scrollValMoblie > 3200 && scrollValMoblie < 3500) {
+                        let animation2 =  3500 - scrollValMoblie ;
+                        $("#pic2").css('margin-right', animation2);
+                        $("#pic3").css('margin-left', animation2);
+                    };
+                }
+            });
+        });
+    </script>
 </body>
 </html>
