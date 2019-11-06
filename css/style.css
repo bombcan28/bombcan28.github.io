@@ -10,7 +10,7 @@ body {
 }
 
 .header {
-  width: 100%;
+  width: 100vw;
   overflow-x: hidden;
   display: block;
   background-color: #000;
@@ -46,7 +46,7 @@ body {
 .title {
   width: 40%;
   min-width: 300px;
-  padding-top: 10vh;
+  padding-top: 2vh;
   margin: 0 auto;
 }
 
@@ -89,7 +89,7 @@ body {
 .title-pic {
   width: 100vw;
   overflow-x: hidden;
-  margin: 0 auto;
+  margin: 3vh auto;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -99,9 +99,9 @@ body {
 }
 
 .title-pic img {
-  width: 15vw;
-  display: block;
+  width: 13vw;
   min-width: 200px;
+  display: block;
   z-index: 100;
 }
 
@@ -166,9 +166,8 @@ body {
 }
 
 @media screen and (max-width: 769px) {
-  .title-pic img {
-    width: 12vw;
-    top: 40vh;
+  .title-pic {
+    margin: 5.1vh auto;
   }
   .title-pic img:first-child {
     -webkit-animation: title-pic-left;
@@ -219,7 +218,7 @@ body {
 
 .event-button-square {
   width: 100%;
-  margin-top: 30px;
+  margin-top: 3vh;
 }
 
 .event-button-square .event-button {
@@ -232,8 +231,13 @@ body {
   margin: 0 auto;
   padding: 20px 10px;
   background-color: yellow;
+}
+
+.event-button-square .event-button a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
   color: black;
-  cursor: pointer;
 }
 
 @media screen and (max-width: 769px) {
@@ -250,7 +254,13 @@ body {
 
 .event-1 {
   background-color: #000072;
-  overflow-y: hidden;
+  overflow: hidden;
+}
+
+.event-1 .event-content {
+  color: #fff;
+  text-align: center;
+  font-family: 'Noto Sans SC', sans-serif;
 }
 
 .event-1 h3 {
@@ -261,6 +271,7 @@ body {
   letter-spacing: 10px;
   font-size: 5rem;
   margin-bottom: 20px;
+  margin: 5vh auto;
 }
 
 .event-1 .click-button {
@@ -287,7 +298,237 @@ body {
 .event-1 img {
   position: relative;
   width: 100%;
-  margin-top: -20px;
+  margin-top: -2vh;
+}
+
+.event-2 {
+  background-color: #000072;
+  overflow: hidden;
+}
+
+.event-2 .event-content {
+  color: #fff;
+  text-align: center;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+.event-2 h3 {
+  color: #e6cf1d;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  text-align: center;
+  text-shadow: 3px 3px black;
+  letter-spacing: 10px;
+  font-size: 4rem;
+  margin-bottom: 20px;
+  margin: 5vh auto;
+}
+
+.event-2 .click-button {
+  width: 40%;
+  min-width: 300px;
+  background-color: #e6cf1d;
+  border: 3px solid white;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  -webkit-box-shadow: 3px 3px black;
+          box-shadow: 3px 3px black;
+  text-align: center;
+}
+
+.event-2 .click-button a {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 4rem;
+  letter-spacing: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.event-2 .picbox {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.event-2 .picbox img {
+  width: 30%;
+}
+
+@media screen and (max-width: 769px) {
+  .event-2 .picbox img {
+    width: 50%;
+  }
+}
+
+.event-3 {
+  background-color: #151c26;
+  overflow: hidden;
+}
+
+.event-3 .event-content {
+  color: #fff;
+  text-align: center;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+.event-3 h3 {
+  color: #e6cf1d;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  text-align: center;
+  text-shadow: 3px 3px black;
+  letter-spacing: 10px;
+  font-size: 5rem;
+  margin-bottom: 20px;
+  margin: 5vh auto;
+}
+
+.event-3 .click-button {
+  width: 40%;
+  min-width: 300px;
+  background-color: #e6cf1d;
+  border: 3px solid white;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 10px;
+  -webkit-box-shadow: 3px 3px black;
+          box-shadow: 3px 3px black;
+  text-align: center;
+}
+
+.event-3 .click-button a {
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size: 4rem;
+  letter-spacing: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.event-3 .picbox {
+  width: 100%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.event-3 .picbox img {
+  width: 30%;
+}
+
+@media screen and (max-width: 769px) {
+  .event-3 .picbox img {
+    width: 50%;
+  }
+}
+
+.event-4 {
+  background-color: #0b0507;
+  overflow: hidden;
+}
+
+.event-4 h3 {
+  color: #e6cf1d;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  text-align: center;
+  text-shadow: 3px 3px black;
+  letter-spacing: 10px;
+  font-size: 5rem;
+  margin-bottom: 20px;
+  margin: 5vh auto;
+}
+
+.event-4 .flexbox {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.event-4 .cardsBar {
+  width: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-bottom: 20px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: center;
+}
+
+@media screen and (max-width: 769px) {
+  .event-4 .cardsBar {
+    width: 100%;
+  }
+}
+
+.event-4 .cardsBar .card {
+  width: 45%;
+  margin: 10px 5px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+@media screen and (max-width: 769px) {
+  .event-4 .cardsBar .card {
+    width: 45%;
+  }
+}
+
+.event-4 .cardsBar .card img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.event-4 .cardsBar .card span {
+  color: red;
+  font-weight: bold;
+}
+
+.event-4 .cardsBar .card .buy {
+  background-color: #000072;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+.event-4 .cardsBar .card .buy a {
+  color: white;
+  text-decoration: none;
+  font-family: 'Noto Sans SC', sans-serif;
+}
+
+.event-4 .picbox {
+  width: 50%;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 30px;
+}
+
+@media screen and (max-width: 769px) {
+  .event-4 .picbox {
+    width: 100%;
+  }
+}
+
+.event-4 .picbox img {
+  width: 100%;
 }
 
 .cardsBar {
@@ -301,6 +542,7 @@ body {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  text-align: center;
 }
 
 .cardsBar .card {
@@ -326,11 +568,12 @@ body {
 
 .cardsBar .card span {
   color: red;
+  font-weight: bold;
 }
 
 .cardsBar .card .buy {
   background-color: #000072;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
   padding: 10px;
   border-radius: 5px;
