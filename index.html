@@ -210,11 +210,11 @@
             //複製成功執行
             clipboard.on('success', function (e) {
                 e.clearSelection();
-                alert("複製成功，您複製的內容為\n\n「" + e.text + "」");
+                alert("复制成功，速速打开打开淘宝app进行查看！");
             });
             //複製失敗執行
             clipboard.on('error', function (e) {
-                alert("複製失敗");
+                alert("一定是哪里出了问题，请稍等我们一下，马上就好！");
             });
             $(window).scroll(function () {
                 if(document.body.clientWidth > 769){
@@ -236,8 +236,8 @@
                         let animation1 = 1800 - scrollValMoblie;
                         $("#pic1").css('margin-top', animation1);
                     };
-                    if (scrollValMoblie > 2900 && scrollValMoblie < 3300) {
-                        let animation2 =  3300 - scrollValMoblie ;
+                    if (scrollValMoblie > 2600 && scrollValMoblie < 3000) {
+                        let animation2 =  2900 - scrollValMoblie ;
                         $("#pic2").css('margin-right', animation2);
                         $("#pic3").css('margin-left', animation2);
                     };

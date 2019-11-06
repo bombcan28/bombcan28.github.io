@@ -64,6 +64,8 @@ body{
 }
 .title-pic{
     width: 100vw;
+    height:20vh;
+    min-height:300px;
     overflow-x: hidden;
     margin: 3vh auto;
     display: inline-flex;
@@ -123,7 +125,7 @@ body{
     margin: 10px 20px;
     text-align: center;
     letter-spacing: 10px;
-    padding-top: 10vh;
+    padding-top: 3vh;
     font-size: 1.8rem;
     animation: event-neon;
     animation-duration: 10s;
@@ -256,6 +258,8 @@ body{
     }
     .picbox{
         width: 100%;
+        height:20vh;
+        min-height:300px;
         display: inline-flex;
         justify-content: space-around;
         img{
