@@ -204,12 +204,12 @@
                 if(document.body.clientWidth > 769){
                     let scrollVal = $(this).scrollTop();
                     $("span.ScrollTop").text(scrollVal);
-                    if (scrollVal > 750 && scrollVal < 950) {
-                        let animation1 = 750 - scrollVal;
+                    if (scrollVal > 900 && scrollVal < 1200) {
+                        let animation1 = 900 - scrollVal;
                         $("#pic1").css('margin-top',animation1);
                     };
-                    if( scrollVal > 2000 && scrollVal < 2300){
-                        let animation2 = scrollVal - 2000 ;
+                    if( scrollVal > 2300 && scrollVal < 2600){
+                        let animation2 = scrollVal - 2300 ;
                         $("#pic2").css('margin-left', animation2);
                         $("#pic3").css('margin-right', animation2);
                     };
